@@ -1,0 +1,55 @@
+.g-message-box-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: .3);
+    .g-message-box-dialog {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 10px;
+        width: 420px;
+        color: $base-col;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: $base-bg;
+        box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+        border-radius: 5px;
+        .g-message-box-dialog-header {
+            position: relative;
+            padding: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+            .header-icon {
+                margin-right: 5px;
+                font-size: 18px;
+            }
+            .g-icon-close {
+                position: absolute;
+                right: 0;
+                padding: 5px;
+                font-size: 14px;
+                color: $base-icon;
+                cursor: pointer;
+            }
+        }
+        .g-message-box-dialog-content {
+            padding-bottom: 20px;
+        }
+        .g-message-box-dialog-footer {
+            display: flex;
+            justify-content: flex-end;
+            .msg-btn {
+                margin: 5px 8px;
+            }
+        }
+    }
+}
+
+.g-msgbox-fade-enter-active, .g-msgbox-fade-leave-active {
+    transition: opacity .3s;
+}
+.g-msgbox-fade-enter, .g-msgbox-fade-leave-to {
+    opacity: 0;
+}

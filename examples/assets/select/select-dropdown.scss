@@ -1,0 +1,17 @@
+.g-select-dropdown {
+    position: absolute;
+    z-index: 1001;
+    margin: 5px 0;
+    // max-height: 300px;
+    border: 1px solid $base-bd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    background-color: $base-bg;
+    .g-select-dropdown__list {
+        margin: 0;
+        padding: 6px 0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+}

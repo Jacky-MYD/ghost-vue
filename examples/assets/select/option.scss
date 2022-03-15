@@ -1,0 +1,25 @@
+.g-select-dropdown__item {
+    overflow: hidden;
+    position: relative;
+    padding: 0 20px;
+    height: 34px;
+    line-height: 34px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: $base-col;
+    cursor: pointer;
+    &:hover {
+        color: $primary-col;
+        background-color: $hover-bg;
+    }
+}
+.g-select-dropdown__item.is-disabled {
+    color: $base-disabled-col;
+    background-color: $base-bg;
+    cursor: not-allowed;
+}
+.g-select-dropdown__item.is-selected {
+    font-weight: bold;
+    color: $primary-focus;
+}

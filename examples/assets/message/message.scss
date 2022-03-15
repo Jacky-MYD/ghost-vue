@@ -1,0 +1,65 @@
+.g-message {
+    position: fixed;
+    display: flex;
+    padding: 10px 16px;
+    top: 20px;
+    left: 50%;
+    align-items: center;
+    width: 500px;
+    font-size: 14px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    .g-message__prefixIcon {
+        margin-right: 10px;
+        margin-top: 2px;
+    }
+    .g-message__suffixIcon {
+        position: absolute;
+        right: 10px;
+        color: $info-col;
+        cursor: pointer;
+        .g-icon-close {
+            padding: 6px;
+            font-size: 12px;
+        }
+    }
+}
+
+.g-message.g-message--success {
+    color: $success-col;
+    background-color: $success-label-bg;
+}
+
+.g-message.g-message--info {
+    color: $info-col;
+    background-color: $info-label-bg;
+}
+
+.g-message.g-message--warning {
+    color: $warning-col;
+    background-color: $warning-label-bg;
+}
+
+.g-message.g-message--error {
+    color: $danger-col;
+    background-color: $danger-label-bg;
+}
+
+.g-message.g-message--center {
+    justify-content: center;
+}
+.g-message.g-message--right {
+    justify-content: flex-end;
+    .g-message__content {
+        margin-right: 30px;
+    }
+}
+
+.g-msg-fade-enter-active, .g-msg-fade-leave-active {
+    transition: opacity .3s, transform .4s, top .4s;
+    transform: translateX(-50%);
+}
+.g-msg-fade-enter, .g-msg-fade-leave-to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+}

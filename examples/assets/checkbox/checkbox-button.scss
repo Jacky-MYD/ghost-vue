@@ -1,0 +1,72 @@
+.g-checkbox-button {
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    color: $base-col;
+    cursor: pointer;
+    user-select: none;
+    .g-checkbox-button__original {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        outline: none;
+    }
+    .g-checkbox-button__label {
+        display: inline-block;
+        line-height: 14px;
+        padding: 12px 20px;
+        border: 1px solid $base-bd;
+        border-left: 0;
+        font-size: 14px;
+    }
+}
+.g-checkbox-button.is-checked {
+    .g-checkbox-button__label {
+        border-color: $primary-col;
+        border-right: 1px solid #fff;
+        color: #fff;
+        background-color: $primary-col;
+    }
+}
+
+.g-checkbox-button:first-child .g-checkbox-button__label {
+    border-radius: 4px 0 0 4px;
+    border-left: 1px solid $base-bd;
+}
+.g-checkbox-button:last-child .g-checkbox-button__label {
+    border-radius: 0 4px 4px 0;
+}
+
+.g-checkbox-button.is-disabled {
+    cursor: not-allowed;
+    .g-checkbox-button__label {
+        border-color: $base-disabled-bd;
+        color: $base-disabled-col;
+        background-color: #fff;
+    }
+}
+.g-checkbox-button.is-checked.is-disabled {
+    .g-checkbox-button__label {
+        background-color: $radio-button-disabled-bg;
+    }
+}
+.g-checkbox-button.g-checkbox-button--medium {
+    .g-checkbox-button__label {
+        padding: 10px 20px;
+    }
+    
+}
+.g-checkbox-button.g-checkbox-button--small {
+    .g-checkbox-button__label {
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+}
+.g-checkbox-button.g-checkbox-button--mini {
+    .g-checkbox-button__label {
+        padding: 7px 15px;
+        font-size: 12px;
+    }
+}

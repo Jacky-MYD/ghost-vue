@@ -1,0 +1,36 @@
+.g-select {
+    position: relative;
+    width: 240px;
+    .g-input {
+        .g-select__caret {
+            display: inline-block;
+            transition: transform .3s;
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+        .g-select__caret.is-reverse {
+            transform: rotate(0deg);
+        }
+        
+    }
+    .g-select__tags {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        transform: translateY(-50%);
+        .g-tag {
+            margin: 2px 0 2px 6px;
+        }
+    }
+}
+.g-scrollbar__wrap {
+    overflow: scroll;
+    height: 100%;
+}
+.g-select-dropdown__wrap {
+    max-height: 280px;
+}
+.g-input--suffix .g-input__suffix i.g-icon--mini {
+    padding: 7px 15px;
+    font-size: 12px;
+}

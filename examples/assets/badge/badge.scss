@@ -1,0 +1,47 @@
+.g-badge {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    .g-badge__content {
+        display: inline-block;
+        padding: 0 6px;
+        height: 18px;
+        font-size: 12px;
+        line-height: 18px;
+        border: 1px solid $base-bg;
+        border-radius: 10px;
+        color: $base-bg;
+        text-align: center;
+        white-space: nowrap;
+        background-color: $badge-bg;
+    }
+    .is-fixed {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        transform: translateX(100%) translateY(-50%);
+    }
+    .is-dot {
+        top: 0;
+        height: 8px;
+        width: 8px;
+        padding: 0;
+        right: 0;
+        border-radius: 50%;
+    }
+    .g-badge__content--primary {
+        background-color: $primary-col;
+    }
+    .g-badge__content--success {
+        background-color: $success-col;
+    }
+    .g-badge__content--warning {
+        background-color: $warning-col;
+    }
+    .g-badge__content--info {
+        background-color: $info-col;
+    }
+    .g-badge__content--danger {
+        background-color: $danger-col;
+    }
+}

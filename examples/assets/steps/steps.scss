@@ -1,0 +1,133 @@
+.g-steps {
+    .g-step__header {
+        position: relative;
+        .g-step__icon {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            font-size: 14px;
+            border: 2px solid $base-col;
+            border-radius: 50%;
+            background-color: $base-bg;
+            .g-step__icon-inner {
+                display: inline-block;
+                user-select: none;
+                text-align: center;
+                line-height: 1;
+                color: inherit;
+            }
+            .is-status {
+                font-size: 18px;
+            }
+        }
+    }
+    .g-step__main {
+        .g-step__title {
+            font-size: 16px;
+            line-height: 32px;
+        }
+        .g-step__description {
+            font-size: 12px;
+        }
+    }
+    
+    .g-step .is-finish {
+        color: $primary-col;
+        .g-step__line {
+            background-color: $primary-col;
+        }
+        .g-step__icon {
+            border-color: $primary-col;
+        }
+    }
+    .g-step .is-success {
+        color: $success-col;
+        .g-step__line {
+            background-color: $success-col;
+        }
+        .g-step__icon {
+            border-color: $success-col;
+        }
+    }
+    .g-step .is-process {
+        color: $base-col;
+        .g-step__line {
+            background-color: $base-col;
+        }
+        .g-step__icon {
+            border-color: $base-col;
+        }
+    }
+    .g-step .is-wait {
+        color: $info-disabled;
+        .g-step__line {
+            background-color: $info-disabled;
+        }
+        .g-step__icon {
+            border-color: $info-disabled;
+        }
+    }
+    .g-step .is-error {
+        color: $danger-col;
+        .g-step__line {
+            background-color: $danger-col;
+        }
+        .g-step__icon {
+            border-color: $danger-col;
+        }
+    }
+}
+.g-steps--horizontal {
+    display: flex;
+    justify-content: space-between;
+    .g-step__header {
+        .g-step__line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: $base-bd;
+            transform: translateY(-50%);
+        }
+    }
+    .is-center {
+        text-align: center;
+        .g-step__line {
+            left: 50%;
+            right: -50%;
+        }
+    }
+}
+.g-steps--vertical {
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+    .is-vertical {
+        display: flex;
+        flex-shrink: 1;
+        .g-step__header {
+            margin-right: 10px;
+            .g-step__line {
+                position: absolute;
+                top: 0;
+                left: 13px;
+                bottom: 0;
+                width: 2px;
+                background-color: $base-bd;
+            }
+        }
+    }
+    
+}
+.g-step:last-of-type .g-step__line {
+    display: none;
+}
+.g-step:last-of-type.is-flex {
+    flex-basis: auto!important;
+    flex-shrink: 0;
+    flex-grow: 0;
+}

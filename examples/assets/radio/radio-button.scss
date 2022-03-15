@@ -1,0 +1,92 @@
+.g-radio-button {
+    display: inline-block;
+    position: relative;
+    color: $base-col;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    .g-radio-button__original {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        outline: none;
+    }
+    .g-radio-button__label {
+        display: inline-block;
+        padding: 12px 20px;
+        border: 1px solid $base-bd;
+        border-left: 0;
+        font-size: 14px;
+    }
+}
+.g-radio-button.is-checked {
+    .g-radio-button__label {
+        border-color: $primary-col;
+        color: #fff;
+        background-color: $primary-col;
+    }
+}
+.g-radio-button:first-child .g-radio-button__label {
+    border-radius: 4px 0 0 4px;
+    border-left: 1px solid $base-bd;
+}
+.g-radio-button:last-child .g-radio-button__label {
+    border-radius: 0 4px 4px 0;
+}
+
+.g-radio-button.g-radio-button--medium {
+    .g-radio-button__label {
+        padding: 10px 20px;
+    }
+    
+}
+.g-radio-button.g-radio-button--small {
+    .g-radio-button__label {
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+}
+.g-radio-button.g-radio-button--mini {
+    .g-radio-button__label {
+        padding: 7px 15px;
+        font-size: 12px;
+    }
+}
+
+.g-radio-button.is-disabled {
+    .g-radio-button__label {
+        border-color: $base-disabled-bd;
+        color: $base-disabled-col;
+        background-color: #fff;
+        cursor: not-allowed;
+    }
+}
+
+.g-radio-button.is-checked.is-disabled {
+    .g-radio-button__label {
+        border-color: $base-disabled-bd;
+        color: $base-disabled-col;
+        background-color: $radio-button-disabled-bg;
+        cursor: not-allowed;
+    }
+}
+
+.g-radio-button.g-radio-button--medium {
+    .g-radio-button__label {
+        padding: 10px 20px;
+    }
+    
+}
+.g-radio-button.g-radio-button--small {
+    .g-radio-button__label {
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+}
+.g-radio-button.g-radio-button--mini {
+    .g-radio-button__label {
+        padding: 7px 15px;
+        font-size: 12px;
+    }
+}

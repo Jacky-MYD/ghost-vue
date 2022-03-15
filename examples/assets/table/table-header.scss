@@ -1,0 +1,22 @@
+.g-table__header {
+    th {
+        overflow: hidden;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+    th>.cell {
+        display: inline-block;
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+.g-table__fixed-right .g-table__fixed-body-wrapper, .g-table__fixed-right .g-table__fixed-footer-wrapper, .g-table__fixed-right .g-table__fixed-header-wrapper {
+    left: auto;
+    right: 0;
+}

@@ -1,0 +1,74 @@
+
+.g-loading-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .8);
+    .g-loading-spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 12px;
+        text-align: center;
+        color: $hover-bd;
+        .loading-icon {
+            font-size: 20px;
+        }
+        .icon-sport {
+            display: inline-block;
+            animation: iconSport 1s infinite linear;
+            -webkit-animation: iconSport 1s infinite linear;
+        }
+        .loading-svg {
+            width: 35px;
+            height:35px;
+            .svg-path {
+                stroke: $primary-col;
+                stroke-width: 3;
+                fill: none;
+                animation: dash 1s infinite linear;
+                -webkit-animation: dash 1s infinite linear;
+            }
+        }
+        .g-loading-text {
+            margin: 5px 0;
+            color: $primary-col;
+        }
+    }
+}
+.g-loading-mask.is-fixed {
+    position: fixed;
+}
+@keyframes iconSport {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+@-webkit-keyframes iconSport {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes dash {
+    0% {
+       stroke-dasharray: 1, 200;
+       stroke-dashoffset: 0;
+    }
+    50% {
+       stroke-dasharray: 130, 200;
+       stroke-dashoffset: -50;
+    }
+    100% {
+       stroke-dasharray: 130, 200;
+       stroke-dashoffset: -188;
+    }
+}

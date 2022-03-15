@@ -1,0 +1,332 @@
+.g-tabs {
+    .g-tabs__header {
+        .g-tabs__nav-wrap {
+            position: relative;
+            font-size: 14px;
+            font-weight: bold;
+            .g-tab-pane {
+                color: $base-col;
+                cursor: pointer;
+                &:focus,
+                &:hover {
+                    color: $primary-col;
+                }
+            }
+            .g-tab-pane.is-active {
+                color: $primary-col;
+                z-index: 2;
+            }
+        }
+    }
+    .g-tabs__header.is-top, .g-tabs__header.is-bottom {
+        height: 40px;
+        line-height: 40px;
+        .g-tabs__nav-wrap.is-top, .g-tabs__nav-wrap.is-bottom {
+            display: flex;
+        }
+    }
+    .g-tabs__content {
+        padding: 0 20px;
+        line-height: 40px;
+    }
+}
+.g-tabs--top {
+    .g-tabs__header.is-default.is-top {
+        .g-tabs__nav-wrap.is-top {
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $card-bd;
+                z-index: 1;
+            }
+            .g-tab-pane {
+                margin: 0 20px;
+                border-bottom: 2px solid $card-bd;
+            }
+            .g-tab-pane.is-active {
+                color: $primary-col;
+                border-bottom: 2px solid $primary-col;
+            }
+            .g-tab-pane:first-child {
+                margin-left: 0;
+            }
+            .g-tab-pane:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .g-tabs__header.is-card.is-top {
+        .g-tabs__nav-wrap.is-top {
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $card-bd;
+                z-index: 1;
+            }
+            .g-tab-pane {
+                padding: 0 20px;
+                border: 1px solid $card-bd;
+                border-left: none;
+            }
+            .g-tab-pane:first-child {
+                border-radius: 4px 0 0 0;
+                border-left: 1px solid $card-bd;
+            }
+            .g-tab-pane:last-child {
+                border-radius: 0 4px 0 0;
+            }
+            .g-tab-pane.is-active {
+                color: $primary-col;
+                border-bottom-color: $base-bg;
+            }
+        }
+    }
+    .g-tabs__header.is-border-card.is-top {
+        .g-tabs__nav-wrap.is-top {
+            border-bottom: none;
+            background-color: $hover-bg;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $card-bd;
+                z-index: 1;
+            }
+            .g-tab-pane {
+                padding: 0 20px;
+            }
+            .g-tab-pane.is-active {
+                color: $primary-col;
+                border-left: 1px solid $card-bd;
+                border-right: 1px solid $card-bd;
+                background-color: $base-bg;
+            }
+            .g-tab-pane.is-active:first-child {
+                border-left: none;
+            }
+        }
+    }
+}
+.g-tabs--bottom  {
+    .is-default {
+        .g-tabs__nav-wrap.is-bottom {
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $card-bd;
+                z-index: 1;
+            }
+            .g-tab-pane {
+                margin: 0 20px;
+                border-bottom: 2px solid $card-bd;
+            }
+            .g-tab-pane.is-active {
+                color: $primary-col;
+                border-bottom: 2px solid $primary-col;
+            }
+            .g-tab-pane:first-child {
+                margin-left: 0;
+            }
+            .g-tab-pane:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .g-tabs__header.is-card {
+        margin: 15px 0 0;
+        .g-tabs__nav-wrap {
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $card-bd;
+                z-index: 1;
+            }
+            .g-tab-pane {
+                padding: 0 20px;
+                border: 1px solid $card-bd;
+                border-left: none;
+            }
+            .g-tab-pane:first-child {
+                border-radius: 4px 0 0 0;
+                border-left: 1px solid $card-bd;
+            }
+            .g-tab-pane:last-child {
+                border-radius: 0 4px 0 0;
+            }
+            .g-tab-pane.is-active {
+                color: $primary-col;
+                border-bottom-color: $base-bg;
+            }
+        }
+    }
+    .g-tabs__header.is-border-card.is-bottom {
+        margin-bottom: 0;
+        .g-tabs__nav-wrap.is-bottom {
+            border-top: none;
+            background-color: $hover-bg;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $card-bd;
+                z-index: 1;
+            }
+            .g-tab-pane {
+                padding: 0 20px;
+            }
+            .g-tab-pane.is-active {
+                color: $primary-col;
+                border-left: 1px solid $card-bd;
+                border-right: 1px solid $card-bd;
+                background-color: $base-bg;
+            }
+            .g-tab-pane.is-active:first-child {
+                border-left: none;
+            }
+        }
+    }
+    
+}
+.g-tabs--left {
+    display: flex;
+    .is-default {
+        .g-tabs__nav-wrap.is-left {
+            .g-tab-pane {
+                padding: 0 20px;
+                height: 40px;
+                line-height: 40px;
+                text-align: right;
+                border-right: 2px solid $card-bd;
+            }
+            .g-tab-pane.is-active {
+                border-right: 2px solid $primary-col;
+            }
+        }
+    }
+    .is-card {
+        .g-tabs__nav-wrap.is-left {
+            .g-tab-pane {
+                padding: 0 20px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border: 1px solid $card-bd;
+                border-bottom: none;
+            }
+            .g-tab-pane.is-active {
+                border-right-color: $base-bg;
+            }
+            .g-tab-pane:last-child {
+                border-bottom: 1px solid $card-bd;
+            }
+        }
+    }
+    .is-border-card {
+        .g-tabs__nav-wrap.is-left {
+            border-right: none;
+            background-color: $hover-bg;
+            .g-tab-pane {
+                padding: 0 20px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-right: 1px solid $card-bd;
+                border-bottom: 1px solid $card-bd;
+            }
+            .g-tab-pane.is-active {
+                border-right-color: $base-bg;
+                background-color: $base-bg;
+            }
+            .g-tab-pane:first-child {
+                border-top: none;
+            }
+            .g-tab-pane:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+.g-tabs--right {
+    display: flex;
+    justify-content: space-between;
+    .is-default{
+        .g-tabs__nav-wrap.is-right {
+            .g-tab-pane {
+                padding: 0 20px;
+                height: 40px;
+                line-height: 40px;
+                border-left: 2px solid $card-bd;
+            }
+            .g-tab-pane.is-active {
+                border-left: 2px solid $primary-col;
+            }
+        }
+    }
+    .is-card {
+        .g-tabs__nav-wrap.is-right {
+            .g-tab-pane {
+                padding: 0 20px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border: 1px solid $card-bd;
+                border-bottom: none;
+            }
+            .g-tab-pane.is-active {
+                border-left-color: $base-bg;
+            }
+            .g-tab-pane:last-child {
+                border-bottom: 1px solid $card-bd;
+            }
+        }
+    }
+    .is-border-card {
+        .g-tabs__nav-wrap.is-right {
+            background-color: $hover-bg;
+            .g-tab-pane {
+                padding: 0 20px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-left: 1px solid $card-bd;
+                border-bottom: 1px solid $card-bd;
+            }
+            .g-tab-pane.is-active {
+                border-left-color: $base-bg;
+                background-color: $base-bg;
+            }
+            .g-tab-pane:first-child {
+                border-top: none;
+            }
+            .g-tab-pane:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+.g-tabs--border-card {
+    border: 1px solid #DCDFE6;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);
+}

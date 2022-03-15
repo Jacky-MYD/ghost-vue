@@ -1,0 +1,63 @@
+.g-pagination {
+    padding: 2px 5px;
+    font-weight: 500;
+    color: $base-col;
+    white-space: nowrap;
+    .page-btn {
+        display: inline-block;
+        margin: 0 5px;
+        min-width: 35px;
+        line-height: 26px;
+        border: none;
+        background: center center no-repeat $base-bg;
+        outline: none;
+        vertical-align: middle;
+        cursor: pointer;
+        &:hover {
+            color: $primary-focus;
+        }
+        &:focus {
+            border: none;
+        }
+    }
+    .g-pagination__sizes {
+        display: inline-block;
+        vertical-align: middle;
+        .g-select {
+            width: 100px;
+        }
+        
+    }
+    .g-pagination__jump {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .g-pagination__total {
+        display: inline-block;
+        line-height: 28px;
+        vertical-align: middle;
+    }
+    .page-btn:disabled {
+        color: $base-disabled-col;
+        cursor: not-allowed;
+    }
+}
+.g-pagination::after, .g-pagination::before {
+    display: table;
+    content: "";
+}
+.g-pagination::after {
+    clear: both;
+}
+.g-pagination.is-background .g-pager .g-pager-item, .g-pagination.is-background .btn-next, .g-pagination.is-background .btn-prev {
+    border-radius: 3px;
+    background-color: $base-disabled-bd;
+}
+.g-pager {
+    padding: 0;
+}
+.g-pagination .g-input.g-input--mini .g-input__inner {
+    padding: 0 5px;
+    text-align: center;
+    cursor: pointer;
+}

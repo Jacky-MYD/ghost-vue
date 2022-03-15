@@ -1,0 +1,348 @@
+.g-button {
+    display: inline-block;
+    margin: 0;
+    padding: 12px 20px;
+    border: 1px solid $base-bd;
+    border-radius: 4px;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: $base-col;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: $base-bg;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.1s;
+    -webkit-appearance: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    &:hover,
+    &:focus {
+        border-color: $base-bd-focus;
+        color: $primary-col;
+        background-color: $base-bg-focus;
+    }
+}
+.g-button.g-button--medium {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.g-button.g-button--small {
+    padding: 9px 15px;
+    font-size: 13px;
+}
+.g-button.g-button--mini {
+    padding: 7px 15px;
+    font-size: 12px;
+}
+.g-button--text {
+    border: 0;
+    border-color: null;
+    color: $primary-col;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+        color: $primary-focus;
+        background-color: transparent;
+    }
+}
+.g-button--primary {
+    border-color: $primary-col;
+    color: $base-bg;
+    background-color: $primary-col;
+    &:hover,
+    &:focus {
+        border-color: $primary-focus;
+        color: $base-bg;
+        background: $primary-focus;
+    }
+}
+.g-button--success {
+    border-color: $success-col;
+    color: $base-bg;
+    background-color: $success-col;
+    &:hover,
+    &:focus {
+        border-color: $success-focus;
+        color: $base-bg;
+        background: $success-focus;
+    }
+}
+.g-button--info {
+    border-color: $info-col;
+    color: $base-bg;
+    background-color: $info-col;
+    
+    &:hover,
+    &:focus {
+        border-color: $info-focus;
+        color: $base-bg;
+        background: $info-focus;
+    }
+}
+.g-button--warning {
+    border-color: $warning-col;
+    color: $base-bg;
+    background-color: $warning-col;
+    &:hover,
+    &:focus {
+        border-color: $warning-focus;
+        color: $base-bg;
+        background: $warning-focus;
+    }
+}
+.g-button--danger {
+    border-color: $danger-col;
+    color: $base-bg;
+    background-color: $danger-col;
+    &:hover,
+    &:focus {
+        border-color: $danger-focus;
+        color: $base-bg;
+        background: $danger-focus;
+    }
+}
+
+.g-button.is-plain {
+    &:hover,
+    &:focus {
+        border-color: $primary-col;
+        color: $primary-col;
+        background-color: $base-bg;
+    }
+}
+.g-button--primary.is-plain {
+    border-color: $primary-col;
+    color: $primary-col;
+    background-color: $base-bg;
+    &:hover,
+    &:focus {
+        border-color: $primary-col;
+        color: $base-bg;
+        background: $primary-col;
+    }
+}
+.g-button--success.is-plain {
+    border-color: $success-col;
+    color: $success-col;
+    background-color: $base-bg;
+    &:hover,
+    &:focus {
+        border-color: $success-col;
+        color: $base-bg;
+        background: $success-col;
+    }
+}
+.g-button--info.is-plain {
+    border-color: $info-col;
+    color: $info-col;
+    background-color: $base-bg;
+    &:hover,
+    &:focus {
+        border-color: $info-col;
+        color: $base-bg;
+        background: $info-col;
+    }
+}
+.g-button--warning.is-plain {
+    border-color: $warning-col;
+    color: $warning-col;
+    background-color: $base-bg;
+    &:hover,
+    &:focus {
+        border-color: $warning-col;
+        color: $base-bg;
+        background: $warning-col;
+    }
+}
+.g-button--danger.is-plain {
+    border-color: $danger-col;
+    color: $danger-col;
+    background-color: $base-bg;
+    &:hover,
+    &:focus {
+        border-color: $danger-col;
+        color: $base-bg;
+        background: $danger-col;
+    }
+}
+
+.g-button.is-round {
+    padding: 12px 23px;
+    border-radius: 20px;
+}
+
+.g-button.is-round.g-button--medium {
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-size: 14px;
+}
+.g-button.is-round.g-button--small {
+    padding: 9px 15px;
+    border-radius: 17px;
+    font-size: 13px;
+}
+.g-button.is-round.g-button--mini {
+    padding: 7px 15px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.g-button.is-circle {
+    padding: 12px;
+    border-radius: 50%;
+}
+.g-button.is-circle.g-button--medium {
+    padding: 10px;
+    font-size: 14px;
+}
+.g-button.is-circle.g-button--small {
+    padding: 9px;
+    font-size: 13px;
+}
+.g-button.is-circle.g-button--mini {
+    padding: 7px;
+    font-size: 12px;
+}
+
+.g-button [class*=g-icon-]+span {
+    margin-left: 5px;
+}
+
+.g-button.is-disabled {
+    border-color: $base-disabled-bd;
+    color: $base-disabled-col;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $base-bg;
+    &:hover,
+    &:focus {
+        cursor: not-allowed;
+    }
+}
+.g-button--primary.is-disabled {
+    border-color: $primary-disabled;
+    color: $base-bg;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $primary-disabled;
+    &:hover,
+    &:focus {
+        cursor: not-allowed;
+    }
+}
+.g-button--success.is-disabled {
+    border-color: $success-disabled;
+    color: $base-bg;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $success-disabled;
+    &:hover,
+    &:focus {
+        cursor: not-allowed;
+    }
+}
+.g-button--info.is-disabled {
+    border-color: $info-disabled;
+    color: $base-bg;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $info-disabled;
+    &:hover,
+    &:focus {
+        cursor: not-allowed;
+    }
+}
+.g-button--warning.is-disabled {
+    border-color: $warning-disabled;
+    color: $base-bg;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $warning-disabled;
+    &:hover,
+    &:focus {
+        cursor: not-allowed;
+    }
+}
+.g-button--danger.is-disabled {
+    border-color: $danger-disabled;
+    color: $base-bg;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $danger-disabled;
+    &:hover,
+    &:focus {
+        cursor: not-allowed;
+    }
+}
+
+.g-button.is-plain.is-disabled {
+    border-color: $base-disabled-bd;
+    color: $base-disabled-col;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $base-bg;
+    &:hover,
+    &:focus {
+        cursor: not-allowed;
+    }
+}
+.g-button--primary.is-plain.is-disabled {
+    border-color: $primary-disabled;
+    color: $primary-disabled;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $base-bg;
+    &:hover,
+    &:focus {
+        cursor: not-allowed;
+    }
+}
+.g-button--success.is-plain.is-disabled {
+    border-color: $success-disabled;
+    color: $success-disabled;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $base-bg;
+    &:hover,
+    &:focus {
+        cursor: not-allowed;
+        background-image: none;
+    }
+}
+.g-button--info.is-plain.is-disabled {
+    border-color: $info-disabled;
+    color: $info-disabled;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $base-bg;
+    &:hover,
+    &:focus {
+        cursor: not-allowed;
+    }
+}
+.g-button--warning.is-plain.is-disabled {
+    border-color: $warning-disabled;
+    color: $warning-disabled;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $base-bg;
+    &:hover,
+    &:focus {
+        cursor: not-allowed;
+    }
+}
+.g-button--danger.is-plain.is-disabled {
+    border-color: $danger-disabled;
+    color: $danger-disabled;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $base-bg;
+    &:hover,
+    &:focus {
+        cursor: not-allowed;
+    }
+}

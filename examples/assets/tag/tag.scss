@@ -1,0 +1,103 @@
+.g-tag {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid $base-bd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.g-tag.is-closable {
+    i {
+        margin-left: 10px;
+        padding: 3px;
+        border-radius: 50%;
+        &:hover,
+        &:focus {
+            color: $base-bg;
+            background-color: $info-focus;
+        }
+    }
+}
+.g-tag.g-tag--medium {
+    padding: 8px 13px;
+    font-size: 14px;
+}
+.g-tag.g-tag--small {
+    padding: 6px 10px;
+    font-size: 13px;
+    i {
+        padding: 2px;
+        font-size: 13px;
+    }
+}
+.g-tag.g-tag--mini {
+    padding: 5px 8px;
+    font-size: 12px;
+    i {
+        padding: 2px;
+        font-size: 12px;
+    }
+}
+.g-tag.g-tag--primary {
+    border-color: $primary-disabled;
+    color: $primary-col;
+    background-color: $base-bg-focus;
+    i {
+        &:hover,
+        &:focus {
+            color: $base-bg;
+            background-color: $primary-focus;
+        }
+    }
+}
+.g-tag.g-tag--success {
+    border-color: $success-label-bd;
+    color: $success-col;
+    background-color: $success-label-bg;
+    i {
+        &:hover,
+        &:focus {
+            color: $base-bg;
+            background-color: $success-focus;
+        }
+    }
+}
+.g-tag.g-tag--info {
+    border-color: $info-label-bd;
+    color: $info-col;
+    background-color: $info-label-bg;
+    i {
+        &:hover,
+        &:focus {
+            color: $base-bg;
+            background-color: $info-focus;
+        }
+    }
+}
+.g-tag.g-tag--warning {
+    border-color: $warning-label-bd;
+    color: $warning-col;
+    background-color: $warning-label-bg;
+    i {
+        &:hover,
+        &:focus {
+            color: $base-bg;
+            background-color: $warning-focus;
+        }
+    }
+}
+.g-tag.g-tag--danger {
+    border-color: $danger-label-bd;
+    color: $danger-col;
+    background-color: $danger-label-bg;
+    i {
+        &:hover,
+        &:focus {
+            color: $base-bg;
+            background-color: $danger-focus;
+        }
+    }
+}
+
+.g-tag.is-noborder {
+    border: none;
+}

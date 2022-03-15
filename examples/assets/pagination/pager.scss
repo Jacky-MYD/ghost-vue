@@ -1,0 +1,28 @@
+.g-pager {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: top;
+    list-style: none;
+    font-size: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .g-pager-item {
+        position: relative;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0 4px;
+        min-width: 35px;
+        text-align: center;
+        font-size: 13px;
+        &:hover {
+            color: $primary-focus;
+            cursor: pointer;
+        }
+    }
+    .actived {
+        color: $primary-focus!important;
+    }
+}

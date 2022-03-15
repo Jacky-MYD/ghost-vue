@@ -1,0 +1,10 @@
+.g-table--scrollable-y .g-table__body-wrapper {
+    overflow-y: auto;
+}
+.g-table--scrollable-x .g-table__body-wrapper {
+    overflow-x: auto;
+}
+.g-table tr.g-table__row--striped {
+    background-color: $striped-bg;
+    
+}

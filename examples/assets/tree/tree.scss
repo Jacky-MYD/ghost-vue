@@ -1,0 +1,69 @@
+.g-tree {
+    .g-tree-item {
+        overflow:hidden;
+        max-height: 28px;
+        transition:max-height .3s;
+
+        .g-tree-item__content {
+            // display: flex;
+            // align-items: center;
+            // height: 26px;
+            line-height: 26px;
+            font-size: 14px;
+            color: $base-col;
+            cursor: pointer;
+            &:hover {
+                background: $hover-bg;
+            }
+            .g-tree-icon {
+                padding-left: 10px;
+                width: 20px;
+                color: $hover-bd;
+            }
+            .g-tree-icon-default {
+                font-size: 12px;
+            }
+            .g-tree-icon-square {
+                font-size: 14px;
+            }
+            .g-tree-icon-checkbox {
+                padding: 10px;
+                transition: color .3s;
+                &:hover,
+                &:focus {
+                    color: $primary-col;
+                }
+            }
+            .g-icon-select, .g-icon-half-select {
+                color: $primary-col;
+            }
+            .g-tree-icon.is-disabled {
+                color: $base-disabled-col;
+                &:hover,
+                &:focus {
+                    color: $base-disabled-col;
+                }
+            }
+        }
+        .is-disabled {
+            color: $base-disabled-col;
+            cursor: not-allowed;
+        }
+        .g-tree-item__children {
+            text-indent: 20px;
+            .g-tree-item__children .g-tree-item__content {
+                padding-left: 20px;
+            }
+            .g-tree-item__children .g-tree-item__children .g-tree-item__content {
+                padding-left: 40px;
+            }
+        }
+    }
+    .is-expanded {
+        overflow: inherit;
+        // background: $hover-bg;
+    }
+    .is-current {
+        background: $hover-bg;
+    }
+}

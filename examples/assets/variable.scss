@@ -1,0 +1,79 @@
+// [class$=--primary] {
+//     color: white!important;
+//     background-color: #4c86c0!important;
+//     border-color: #409eff!important;
+//     &:hover,
+//     &:focus {
+//         background: #66b1ff!important;
+//         border-color: #66b1ff!important;
+//         color: white!important;
+//     }
+// }
+// [class$=--success] {
+//     color: white!important;
+//     background-color: #67c23a!important;
+//     border-color: #67c23a!important;
+//     &:hover,
+//     &:focus {
+//         background: #85ce61!important;
+//         border-color: #85ce61!important;
+//         color: white!important;
+//     }
+// }
+
+$base-bd: #f1f0f0;
+$hover-bd: #c3c6cc;
+$base-col: #313233;
+$routine-col: #626466;
+$base-icon: #909399;
+$base-bg: #ffffff;
+$base-bd-focus: #90c7ff;
+$base-bg-focus: #eaf5ff;
+$base-disabled-col: #c3c6cc;
+$base-disabled-bd: #ebeff3;
+$hover-bg: #f2f7fd;
+$striped-bg: #fbfbfb;
+$card-bd: #DCDFE6;
+
+$primary-col: #218fff; 
+$primary-focus: #4ea5ff;
+$primary-click: #1f85ed;
+$primary-disabled: #90c7ff;
+
+$success-col: #03c087;
+$success-focus: #35cd9f;
+$success-click: #06ac7a;
+$success-disabled: #81dfc3;
+$success-label-bd: #83e9ca;
+$success-label-bg: #e5fcf5;
+
+$info-col: #929599;
+$info-focus: #a8aaad;
+$info-click: #7e8185;
+$info-disabled: #c8cacc;
+$info-label-bd: #dadada;
+$info-label-bg: #f5f5f5;
+
+$warning-col: #eba735;
+$warning-focus: #efb95d;
+$warning-click: #dd941c;
+$warning-disabled: #f5d39a;
+$warning-label-bd: #f9d08b;
+$warning-label-bg: #fbf3e6;
+
+$danger-col: #f97964;
+$danger-focus: #fa9483;
+$danger-click: #dc6653;
+$danger-disabled: #fcbcb1;
+$danger-label-bd: #fb9b8b;
+$danger-label-bg: #ffedea;
+
+$radio-disabled-bg: #f5f7fa;
+$radio-disabled-bd: #e4e7ed; 
+$radio-button-disabled-bg: #f2f6fc;
+$checkbox-disabled-bg: #edf2fc;
+
+
+$label-col: #929599;
+$tip-bg: #313131;
+$badge-bg: #f56c6c;

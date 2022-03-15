@@ -1,0 +1,108 @@
+.g-tooltip__popper {
+    position: absolute;
+    padding: 10px;
+    min-width: 10px;
+    line-height: 1.2;
+    font-size: 12px;
+    border-radius: 4px;
+    
+}
+.g-tooltip__popper.is-dark {
+    color: $base-bg;
+    background-color: $tip-bg;
+}
+
+.popper-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.g-tooltip--top-start{
+    left: 20px;
+    bottom: -6px;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 6px solid $tip-bg;
+}
+.g-tooltip--top{
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 6px solid $tip-bg;
+}
+.g-tooltip--top-end{
+    right: 20px;
+    bottom: -6px;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 6px solid $tip-bg;
+}
+.g-tooltip--left-start{
+    right: -6px; 
+    bottom: 3px;
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-left:10px solid $tip-bg;
+}
+.g-tooltip--left{
+    right: -6px; 
+    top: 50%;
+    transform: translateY(-50%);
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-left:10px solid $tip-bg;
+}
+.g-tooltip--left-end{
+    right: -6px; 
+    top: 3px;
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-left:10px solid $tip-bg;
+}
+.g-tooltip--right-start{
+    left: -6px; 
+    bottom: 3px;
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-right:10px solid $tip-bg;
+}
+.g-tooltip--right{
+    left: -6px; 
+    top: 50%;
+    transform: translateY(-50%);
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-right:10px solid $tip-bg;
+}
+.g-tooltip--right-end{
+    left: -6px; 
+    top: 3px;
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-right:10px solid $tip-bg;
+}
+.g-tooltip--bottom-start{
+    left: 20px;
+    top: -6px;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 6px solid $tip-bg;
+}
+.g-tooltip--bottom{
+    left: 50%;
+    top: -6px;
+    transform: translateX(-50%);
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 6px solid $tip-bg;
+}
+.g-tooltip--bottom-end {
+    right: 20px;
+    top: -6px;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 6px solid $tip-bg;
+    
+}

@@ -1,0 +1,133 @@
+.g-radio {
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+    line-height: 1;
+    color: $base-col;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    .g-radio__input {
+        display: inline-block;
+        position: relative;
+        width: 14px;
+        height: 14px;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        outline: none;
+        .g-radio__inner {
+            display: inline-block;
+            position: absolute;
+            box-sizing: border-box;
+            width: 14px;
+            height: 14px;
+            border: 1px solid $base-bd;
+            border-radius: 100%;
+            background-color: white;
+            cursor: pointer;
+            &:after {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 4px;
+                height: 4px;
+                border-radius: 100%;
+                background-color: white;
+                content: "";
+                transform: translate(-50%, -50%) scale(0);
+                transition: transform .15s ease-in;
+            }
+        }
+        .g-radio__original {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            opacity: 0;
+            outline: none;
+            z-index: -1;
+        }
+    }
+    .g-radio__label {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+}
+
+.g-radio.is-checked {
+    .g-radio__input {
+        .g-radio__inner {
+            border-color: $primary-col;
+            background-color: $primary-col;
+            &:after {
+                transform: translate(-50%,-50%) scale(1);
+            }
+        }
+    }
+    .g-radio__label {
+        color: $primary-col;
+    }
+}
+
+.g-radio.is-bordered {
+    padding: 12px 15px 10px;
+    border: 1px solid $base-bd;
+    border-radius: 4px;
+}
+.g-radio.is-checked.is-bordered {
+    border: 1px solid $primary-col;
+}
+
+.g-radio.g-radio--medium {
+    padding: 10px 13px;
+}
+.g-radio.g-radio--small {
+    padding: 8px 11px;
+    .g-radio__label {
+        font-size: 13px;
+    }
+}
+.g-radio.g-radio--mini {
+    padding: 6px 9px;
+    .g-radio__label {
+        font-size: 12px;
+    }
+}
+
+.g-radio.is-disabled {
+    cursor: not-allowed;
+    .g-radio__input {
+        .g-radio__inner{
+            border-color: $radio-disabled-bd;
+            background-color: $radio-disabled-bg;
+            cursor: not-allowed;
+        }
+        .g-radio__original {
+            border-color: $radio-disabled-bd;
+            cursor: not-allowed;
+        }
+    }
+    .g-radio__label {
+        color: $base-disabled-col;
+        cursor: not-allowed;
+    }
+}
+.g-radio.is-checked.is-disabled {
+    cursor: not-allowed;
+    border-color: $radio-disabled-bd;
+    .g-radio__input {
+        .g-radio__inner{
+            &:after {
+                background-color: $base-disabled-col;
+            }
+        }
+    }
+}
