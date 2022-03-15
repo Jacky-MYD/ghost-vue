@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "iconfont";
+    src: /* IE6-IE8 */
+        url('./src/iconfont.woff') format('woff'),
+        url('./src/iconfont.ttf') format('truetype');
+    font-weight: normal;
+    font-display: inline;
+    font-style: normal;
+}
+
+[class*=g-icon-] {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.g-icon-remove-outline:before {
+    content: "\e6d1";
+}
+  
+.g-icon-no-select:before {
+    content: "\e612";
+}
+  
+.g-icon-select:before {
+    content: "\e614";
+}
+  
+.g-icon-plus-outline:before {
+    content: "\e69a";
+}
+  
+.g-icon-half-select:before {
+    content: "\e7f6";
+}
+  
+.g-icon-right:before {
+    content: "\e63b";
+}
+  
+.g-icon-bottom:before {
+    content: "\e8b4";
+}
+  
+.g-icon-top:before {
+    content: "\e8b5";
+}
+  
+.g-icon-left:before {
+    content: "\e8b6";
+}
+  
+.g-icon-loading:before {
+    content: "\e6a6";
+}
+  
+.g-icon-info:before {
+    content: "\e67d";
+}
+  
+.g-icon-error:before {
+    content: "\e64e";
+}
+  
+.g-icon-success:before {
+    content: "\e671";
+}
+  
+.g-icon-warning:before {
+    content: "\e63d";
+}
+  
+.g-icon-arrow-right:before {
+    content: "\e8b1";
+}
+  
+.g-icon-arrow-left:before {
+    content: "\e656";
+}
+  
+.g-icon-arrow-prev:before {
+    content: "\e8b2";
+}
+  
+.g-icon-arrow-down:before {
+    content: "\e8b3";
+}
+  
+.g-icon-arrow-next:before {
+    content: "\e664";
+}
+  
+.g-icon-arrow-up:before {
+    content: "\e8b0";
+}
+  
+.g-icon-more:before {
+    content: "\e8af";
+}
+  
+.g-icon-view:before {
+    content: "\e62f";
+}
+  
+.g-icon-invisible:before {
+    content: "\e630";
+}
+  
+.g-icon-circle-close:before {
+    content: "\e6b8";
+}
+  
+.g-icon-close:before {
+    content: "\e637";
+}
+
+.g-icon-wrong:before {
+    content: "\e61d";
+}
+  
+.g-icon-check:before {
+    content: "\e66a";
+}
+  
